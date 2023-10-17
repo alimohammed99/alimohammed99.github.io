@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Mohammed Ali | Fullstack WebDev</title>
+
+    <meta name="description" content="Mohammed Ali's portfolio">
+    <meta name="author" content="Mohammed Ali">
+    <meta name="keywords" content="Mohammed Ali, Web development, Software Development">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css"
+        integrity="sha512-rOTVxSYNb4+/vo9pLIcNAv9yQVpC8DNcFDWPoc+gTv9SLu5H8W0Dn7QA4ffLHKA0wysdo6C5iqc+2LEO1miAow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome core CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+        <!-- Favicon
+            ================================================== -->
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/img/hero.jpg">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/hero.jpg">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/hero.jpg">
+        <link rel="icon" sizes="16x16" href="assets/img/hero.jpg">
+        <link rel="manifest" href="assets/img/hero.jpg">
+        <link rel="mask-icon" href="assets/img/hero.jpg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+
+    <!-- The function for sending the email is in here -->
+    <script src="index.js"></script>
+
+
+    <!-- EMAIL-JS LINK  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("l6LEdt1yxDoC2n3cy");
+        })();
+    </script>
+    <!-- EMAIL-JS LINK  -->
+
+    <style>
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* CSS */
+        /* CSS */
+        @keyframes bounceAnimation {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .fade-in.slidee {
+            animation: bounceAnimation 1s infinite;
+        }
+
+
+        /* Define the keyframes for the zoom animation */
+        @keyframes customRotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(25deg);
+                /* Rotate 30 degrees halfway through the animation */
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        /* Apply the animation to the link with the "btn" class */
+        .btncv {
+            animation: customRotate 3s linear infinite;
+            /* Apply the "zoom" animation for 3 seconds, infinitely */
+        }
+
+        .touch {
+            animation: zoom 2s infinite;
+            /* Apply the "zoom" animation for 3 seconds, infinitely */
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(1);
+                background-color: rgb(241, 51, 18);
+                transform: rotate(25deg);
+            }
+
+            50% {
+                transform: scale(1.5);
+                /* Zoom in at 50% of the animation */
+                background-color: rgb(39, 10, 61);
+            }
+
+            100% {
+                transform: scale(1);
+                transform: rotate(25deg);
+
+            }
+        }
+
+        .abcde i {
+            animation: color-change 1s linear infinite;
+            /* Apply the "color-change" animation for 2 seconds, infinitely */
+        }
+
+        @keyframes color-change {
+            0% {
+                color: red;
+                /* Start with the color red */
+            }
+
+            50% {
+                color: white;
+                /* Change to the color blue halfway through the animation */
+            }
+
+            100% {
+                color: red;
+                /* Return to the color red at the end of the animation */
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- Hero Section, Background Image change in css -->
+    <div id="top" class="hero background-overlay">
+
+        <!-- Name & Description -->
+        <div class="hero-content">
+            <h1 class="fade-in slidee">I am Mohammed Ali</h1>
+
+            <p style="text-transform: uppercase" class="fade-in hero-job" id="changingHeading"><span>I'm a creative force in the
+                    world of web
+                    development</span></p>
+
+            <p class="hero-job-desc fade-in" style="text-transform: uppercase">I thrive at the intersection where design &amp;
+                code harmoniously meet.</p>
+
+            <p><a target="_blank" title="Click to download my CV" style="text-align:center;"
+                    href="https://drive.google.com/file/d/1sARUBJe2nJu-9GyhawxaED2Y4xgWPwjC/view?usp=drive_link"
+                    class="btn btncv">Download CV</a></p>
+
+            <section class="section-networks">
+                <div class="container">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=2348135756270" class="rectangle abcde">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/SayidnaTheGreat" class="rectangle abcde">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/mohammed-ali-b4b613238"
+                        class="rectangle abcde">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="mailto:alimoh22062000@gmail.com" class="rectangle abcde">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                    <a target="_blank" href="https://github.com/alimohammed99" class="rectangle abcde">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
+            </section>
+
+            <script>
+                // JavaScript
+                // JavaScript
+                function startSliding() {
+                    const slideElements = document.querySelectorAll('.slide');
+                    slideElements.forEach(function (element) {
+                        element.style.animation = 'slide 4s infinite';
+                    });
+
+                    setTimeout(stopSliding, 2000); // Stop sliding after 2 seconds
+                }
+
+                function stopSliding() {
+                    const slideElements = document.querySelectorAll('.slide');
+                    slideElements.forEach(function (element) {
+                        element.style.animation = 'none'; // Remove the animation
+                    });
+
+                    setTimeout(startSliding, 2000); // Start sliding again after 2 seconds
+                }
+
+                // Start the sliding animation
+                startSliding();
+
+            </script>
+
+
+        </div><!-- /.hero-content -->
+
+        <div class="hero-arrow page-scroll home-arrow-down">
+            <a class="" href="#intro"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+        </div><!-- /.hero-arrow -->
+
+    </div><!-- /.hero -->
+    <!-- End Hero -->
+
+    <!-- Header -->
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#portfolio-perfect-collapse" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Name -->
+                    <div class="page-scroll site-logo">
+                        <a href="#top">ALI</a>
+                    </div>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+
+                    <!-- Navigation -->
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="page-scroll"><a href="#top">Home</a></li>
+                        <li class="page-scroll"><a href="#intro">Intro</a></li>
+                        <li class="page-scroll"><a href="#about">About</a></li>
+                        <li class="page-scroll"><a href="#services">Services</a></li>
+                        <li class="page-scroll"><a href="#history">History</a></li>
+                        <li class="page-scroll"><a href="#works">Works</a></li>
+                        <li class="page-scroll"><a href="#contact">Contact</a></li>
+
+                    </ul><!-- /.navbar-nav -->
+
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav><!-- /.primary-navigation -->
+    </header><!-- /#header -->
+    <!-- End Header -->
+
+    <!-- Main content -->
+    <main id="main" class="site-main">
+
+        <!-- Hello section -->
+        <section class="site-section section-hello" id="intro">
+            <div class="container">
+                <h2>HELLO &amp; WELCOME</h2>
+                <p style="text-transform:uppercase" class="section-subtitle"><span>Step into my universe</span></p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="main-service text-right">
+                            <div class="rectangle">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </div><!-- /.rectangle -->
+                            <h3>I Meet Deadlines</h3>
+                            <p>I prioritize meeting deadlines. Your timeline is my top priority. My commitment is to
+                                deliver a flawless result well
+                                before your specified deadline.</p>
+                        </div><!-- /.main-service -->
+                        <div class="main-service text-right">
+                            <div class="rectangle">
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                            </div>
+                            <h3>Communication Is Key</h3>
+                            <p>I am readily available to address your inquiries and welcome your feedback as soon as
+                                possible.</p>
+                        </div><!-- /.main-service -->
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="big-rectangle">
+                            <img style="max-width: 100%; max-height: 100%;" src="assets/img/alisystem.png" alt="">
+                        </div><!-- /.big-rectangle -->
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="main-service text-left">
+                            <div class="rectangle">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                            <h3>Quality Control</h3>
+                            <p>I meticulously test every aspect to ensure that your project is fully functional,
+                                cross-browser compatible, and aligned
+                                with your unique specifications.</p>
+                        </div><!-- /.main-service -->
+                        <div class="main-service text-left">
+                            <div class="rectangle">
+                                <i class="fa fa-list" aria-hidden="true"></i>
+                            </div><!-- /.rectangle -->
+                            <h3>Pixel Perfect</h3>
+                            <p>I craft meaningful digital solutions and experiences with a blend of design thinking and
+                                creative craftsmanship,
+                                ensuring they hold genuine significance.</p>
+                        </div><!-- /.main-service -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-hello -->
+        <!-- End Hello section -->
+
+
+        <!-- About section -->
+        <section class="site-section section-about text-center" id="about">
+            <div class="container">
+                <h2>ABOUT MOHAMMED ALI</h2>
+                <p class="section-subtitle"><span>My mission is to breathe life into products and services.</span></p>
+
+                <p class="section-subtitle" style="line-height: 1.7;">
+                    Greetings, I'm Mohammed Ali, a graduate of the <b>University of Ilorin</b> with a <b>B.Sc.</b> in
+                    Computer Science. My
+                    captivating journey into the world of web development took root during a challenging time – the
+                    infamous COVID-19
+                    pandemic that swept through my country. Amidst the backdrop of this deadly disease, I discovered my
+                    passion and embarked
+                    on this creative and ever-evolving path.<br><br>
+
+
+                    With a focus on the intersection of creativity and functionality, I'm committed to crafting web
+                    experiences that not
+                    only captivate visually but also serve a practical purpose, enhancing the way users interact with
+                    the digital world.
+
+                    My journey began during a time of <b>adversity</b>, and I'm dedicated to channeling that resilience
+                    and innovation into
+                    every project.<br><br> Together, let's embark on a transformative journey, turning your digital
+                    concepts into reality and
+                    creating solutions that truly matter.
+                </p>
+
+
+            </div>
+        </section><!-- /.section-about -->
+        <!-- End About section -->
+
+        <!-- Skills section -->
+        <section class="site-section section-skills">
+            <!-- <section class="site-section section-hello" id="intro"> -->
+            <!-- <section class="site-section section-about text-center" id="about"></section> -->
+            <h2>MY SKILLS</h2>
+            <p class="section-subtitle"><span>UNVEIL MY WEB DEVELOPMENT EXPERTISE</span></p><br>
+            <div class="mnn">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="assets/img/aliskills.png"
+                                style="max-width: 100%; max-height: 100%; width: auto; height: auto;"
+                                alt="Your Alt Text Here">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <!-- Frontend Development -->
+                            <div class="progress-group">
+                                <h3><b>Frontend Development:</b></h3><br>
+                                <p>HTML</p>
+                                <div class="progress">
+
+                                    <div class="progress-bar" role="progressbar" data-transitiongoal="95">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <p>CSS</p>
+                            <div class="progress">
+
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="85">
+
+                                </div>
+                            </div>
+                            <p>JavaScript</p>
+                            <div class="progress">
+
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="65">
+
+                                </div>
+                            </div>
+                            <p>Bootstrap</p>
+                            <div class="progress">
+
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="95">
+
+                                </div>
+                            </div>
+                            <p>Vue.js</p>
+                            <div class="progress">
+
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="85">
+
+                                </div>
+                            </div>
+                            <p>jQuery</p>
+                            <div class="progress">
+
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="70">
+
+                                </div>
+                            </div> <br>
+                            <div class="progress-group">
+                                <h3><b>Backend Development:</b></h3><br>
+                                <p>PHP</p>
+                                <div class="progress">
+
+                                    <div class="progress-bar" role="progressbar" data-transitiongoal="70">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <p>MySQL</p>
+                            <div class="progress">
+
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="85">
+
+                                </div>
+                            </div>
+                            <p>Laravel</p>
+                            <div class="progress">
+
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="85">
+
+                                </div>
+                            </div><br>
+
+
+
+                        </div><!-- /.progress-group -->
+
+                        <div class="col-sm-4">
+                            <!-- <h2>MY SKILLS</h2> -->
+
+                            <!-- Frontend Development -->
+                            <div class="progress-group">
+                                <h3><b>API & Integration:</b></h3><br>
+                                <p>AJAX</p>
+                                <div class="progress">
+
+                                    <div class="progress-bar" role="progressbar" data-transitiongoal="75">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <p>REST API</p>
+                            <div class="progress">
+
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="80">
+
+                                </div>
+                            </div>
+                            <p>Postman</p>
+                            <div class="progress">
+
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="90">
+
+                                </div>
+                            </div><br>
+                            <div class="progress-group">
+                                <h3><b>Version Control:</b></h3><br>
+                                <p>Git & GitHub</p>
+                                <div class="progress">
+
+                                    <div class="progress-bar" role="progressbar" data-transitiongoal="85">
+
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div class="progress-group">
+                                <h3><b>Design & UI Frameworks:</b></h3><br>
+                                <p>Tailwind CSS</p>
+                                <div class="progress">
+
+                                    <div class="progress-bar" role="progressbar" data-transitiongoal="85">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section><!-- /.section-skills -->
+        <!-- End Skills section -->
+
+        <!-- Counters section -->
+
+        <!-- /.section-counters -->
+        <!-- End Counters section -->
+
+        <!-- Services section -->
+        <section class="site-section section-services" id="services">
+
+            <div class="container-fluid">
+                <h2>MY SERVICES</h2>
+                <p class="section-subtitle"><span>WHAT I BRING TO THE TABLE</span></p>
+            </div>
+
+            <div class="container">
+
+                <div class="carousel slide" id="services-carousel">
+
+                    <div class="item-controls text-center">
+                        <a href="#services-carousel" class="left btn carousel-control" data-slide="prev"><i
+                                class="fa fa-angle-left" aria-hidden="true"></i>
+                        </a>
+                        <a href="#services-carousel" class="right btn carousel-control" data-slide="next"><i
+                                class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </div><!-- /.item-controls -->
+
+                    <div style="margin-bottom:10px" class="carousel-indicators nav-tabs text-center">
+                        <a data-target="#services-carousel" href="#" data-slide-to="0" class="active">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-code" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Frontend Development</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="1">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-code" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Backend Development</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="2">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">API Development & Integration</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="3">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Web Application Security</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="4">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Database Design and Management</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="5">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Web Maintenance and Support</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="6">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Web Hosting and Domain Management</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+                        <a data-target="#services-carousel" href="#" data-slide-to="7">
+                            <div class="col-xs-4 col-sm-fifth">
+                                <div class="service">
+                                    <div class="rectangle">
+                                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    </div>
+                                    <p class="hidden-xs">Consultation and Training</p>
+                                </div>
+                            </div>
+                        </a><!-- /.item -->
+
+                    </div><br><br><br><br><!-- /.carousel-indicators -->
+
+
+                    <div style="margin-top:20px" class="carousel-inner">
+                        <!-- Item 1 -->
+                        <div id="item1" class="item tab-pane active">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Frontend Development</h3>
+                                        <p style="font-size:15px">In the ever-evolving digital realm, the frontend of a
+                                            website acts as the inviting gateway, marking a user's initial
+                                            encounter with your online identity. It is the canvas where the artistry of
+                                            design melds seamlessly with functionality
+                                            to craft an immersive and engaging user journey.</p>
+
+                                        <p style="font-size:15px">As a frontend web developer, I specialize in sculpting
+                                            this pivotal facet of the web. I take immense pride in the
+                                            alchemy that turns concepts into enthralling, user-centric interfaces. These
+                                            interfaces are not only visually striking
+                                            but also finely tuned to ensure flawless functionality.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img style="height:auto; width:80%" src="assets/img/frontali.jpeg"
+                                        class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 2 -->
+                        <div id="item2" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Backend Development</h3>
+                                        <p style="font-size:15px">At the core of your online presence lies the backend –
+                                            the engine room where data finds its home, intricate logic takes
+                                            shape, and your website's inner workings are carefully orchestrated.</p>
+
+                                        <p style="font-size:15px">In my role as a backend web developer, my primary
+                                            mission is to ensure the seamless and dependable operation of your
+                                            digital platform. Whether it's data management, security, scalability, or
+                                            performance enhancement, I handle the
+                                            technical intricacies, allowing you to direct your focus towards what truly
+                                            matters – your online triumph.
+
+                                            Let's collaborate to infuse the strength and precision of backend
+                                            development into your web project for a robust digital
+                                            future. </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img style="height:auto; width:100%" src="assets/img/alibackends.png"
+                                        class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 3 -->
+                        <div id="item3" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">API Development & Integration</h3>
+                                        <p style="font-size:15px">In today's interconnected digital landscape, seamless
+                                            communication between applications is the key to unlocking new
+                                            possibilities. API (Application Programming Interface) development and
+                                            integration lie at the heart of this dynamic
+                                            synergy.</p>
+
+                                        <p style="font-size:15px"> As an API developer, I specialize in creating these
+                                            essential bridges that allow different software systems to interact,
+                                            share data, and enhance the overall functionality of your web applications.
+                                            Here's what you can expect from my API
+                                            development and integration services</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img style="height:auto; width:100%" src="assets/img/aliapis.png"
+                                        class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 4 -->
+                        <div id="item4" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Web Application Security</h3>
+                                        <p style="font-size:15px">In the realm of the internet, safeguarding your
+                                            digital assets is paramount. Web application security stands as the
+                                            fortress, defending your online presence against an array of potential
+                                            threats and vulnerabilities.</p>
+
+                                        <p style="font-size:15px">As a web application security specialist, my mission
+                                            is to fortify your digital domains. I employ an array of measures
+                                            to ensure the integrity of your web applications, shielding them from harm
+                                            and ensuring a secure environment for your
+                                            online ventures.
+
+                                            Let's collaborate to uphold the security of your web applications and
+                                            preserve the trust and peace of mind of both you
+                                            and your users.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img style="height:auto; width:100%" src="assets/img/aliwebsecurity.png">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 5 -->
+                        <div id="item5" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Database Design and Management</h3>
+                                        <p style="font-size:15px">In the ever-evolving digital landscape, the
+                                            organization and secure management of data stand as vital pillars for the
+                                            success of your web applications and business.</p>
+                                        <p style="font-size:15px"> As a specialist in database design and management, my
+                                            mission is to
+                                            create structured, efficient, and resilient data systems.
+
+                                            By tailoring database solutions to your specific needs, optimizing data
+                                            performance, and safeguarding data integrity, I
+                                            ensure that your information assets are not only organized but also
+                                            protected. Together, we can develop a reliable data
+                                            management framework that forms the bedrock of your digital operations.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/img/dbali.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 6 -->
+                        <div id="item6" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Web Maintenance and Support</h3>
+                                        <p style="font-size:15px">In the dynamic digital realm, the longevity and
+                                            dependability of your web presence are critical. Web maintenance and
+                                            support are the pillars that uphold the continuous operation of your online
+                                            assets.</p>
+
+                                        <p>As a specialist in web maintenance and support, my commitment is to provide
+                                            the vigilance and expertise required to
+                                            maintain your website's efficiency and reliability. Whether it's routine
+                                            updates, troubleshooting issues, or ensuring
+                                            security, my role is to keep your online venture running smoothly.
+
+                                            Together, we can sustain the integrity of your digital footprint, allowing
+                                            you to direct your focus toward your core
+                                            objectives, with the assurance that your web presence is in capable and
+                                            dedicated hands.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/img/aliwebmaintenances.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 7 -->
+                        <div id="item7" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Web Hosting and Domain Management</h3>
+                                        <p style="font-size:15px">In the digital landscape, your web presence relies on
+                                            the foundation of web hosting and domain management. These
+                                            elements form the cornerstone of your online identity, ensuring that your
+                                            website is accessible and secure.</p>
+
+                                        <p>As a specialist in web hosting and domain management, my focus is on
+                                            providing you with a reliable and seamless online
+                                            environment. I handle the technical intricacies, allowing you to concentrate
+                                            on your digital goals and content. Let's
+                                            collaborate to ensure that your website stays online, serving your audience
+                                            effectively and consistently.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/img/alihosting.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+                        <!-- Item 8 -->
+                        <div id="item8" class="item tab-pane">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="service-info">
+                                        <h3 class="service-title">Consultation and Training</h3>
+                                        <p style="font-size:15px">In the ever-changing digital landscape, staying
+                                            informed and equipped with the right knowledge and skills is essential.</p>
+                                        <p>As a consultant and trainer, I specialize in providing you with the guidance
+                                            and education you need to thrive in the
+                                            digital world.
+
+                                            My role is to offer tailored advice, training, and strategies that empower
+                                            you to excel in your digital endeavors.
+                                            Whether you're looking to deepen your understanding of web technologies,
+                                            enhance your online presence, or fine-tune your
+                                            digital strategy, I'm here to provide the expertise and support you require.
+
+                                            Together, we can unlock your full potential in the dynamic digital realm,
+                                            helping you achieve your goals and stay ahead
+                                            in an ever-evolving online world.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/img/aliconsultancy.png" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div><!-- /.item -->
+
+                    </div><!-- /.carousel-inner -->
+                </div><!-- /.carousel -->
+            </div>
+        </section><!-- /.section-services -->
+        <!-- End Services section -->
+
+        <!-- Reviews section -->
+        <section class="site-section section-reviews text-center">
+            <div class="container">
+                <h2> Reviews</h2>
+                <p class="section-subtitle" style="text-transform:underline"><span>Client Chronicles: Stories of Success
+                        and Satisfaction</span></p>
+            </div>
+
+            <div class="blue-bg">
+                <div class="container">
+                    <div class="review-carousel">
+                        <!-- Review 1 -->
+                        <div class="review">
+                            <div class="rectangle">
+                                <!-- <img src="assets/img/review.jpg" class="img-res" alt=""> -->
+                            </div>
+                            <p>Ali is a Web development wizard! His ability to turn our vision into a fully functional,
+                                visually appealing
+                                website was outstanding. What sets Ali apart is his dedication to customer satisfaction.
+                                He patiently walked
+                                us through the entire process, providing training and consultation that made us feel
+                                confident in managing our online
+                                presence. We couldn't be happier with the results and the ongoing support we receive.
+                                Thank you, Ali for making
+                                our digital dreams a reality.</p>
+                            <div class="review-author">
+                                <h3>Surveyor Ibrahim Mohammed</h3>
+                                <p>Surveyor General, Kwara State</p>
+                            </div><!-- /.review-author -->
+                        </div><!-- /.review -->
+                        <!-- Review 2 -->
+                        <div class="review">
+                            <div class="rectangle">
+                                <!-- <img src="assets/img/review-2.jpg" class="img-res" alt=""> -->
+                            </div>
+                            <p>Working with Ali has been an absolute pleasure. His expertise in web development is truly
+                                remarkable. Not only
+                                does he create a stunning websites for us, but he also ensured they run smoothly and
+                                efficiently. His attention to
+                                details, dedication to security, and commitment to excellence are truly impressive. We
+                                are delighted with the results,
+                                and we highly recommend Mohammed Ali to anyone seeking a top-notch Web developer</p>
+                            <div class="review-author">
+                                <h3>Dr. Suleiman Danmairomo</h3>
+                                <p>Director, Piggisty</p>
+                            </div><!-- /.review-author -->
+                        </div><!-- /.review -->
+                    </div><!-- /.review-carousel -->
+                </div>
+            </div>
+        </section><!-- /.section-reviews -->
+        <!-- End Reviews section -->
+
+
+
+        <!-- History section -->
+        <section class="section-history" id="history">
+            <div class="container">
+                <div class="text-center section-diff-title">
+                    <h2 style="text-transform:uppercase">A Look Back At my History</h2>
+                    <p style="border:1px dotted rgb(80, 46, 105); padding:10px; font-size:20px">Work Experiences</p>
+                </div>
+                <!-- Timeline -->
+                <ul class="timeline">
+                    <!-- Timeline badge -->
+                    <li class="timeline-start">
+                        <div class="rectangle"><span>History</span></div>
+                    </li><!-- /.timeline-start -->
+                    <li class="timeline-inverted">
+                        <div class="rectangle timeline-rectangle"></div>
+                        <div class="timeline-panel">
+                            <!-- <h1>EDUCATION</h1> -->
+                            <div class="timeline-heading">
+
+                                <div class="timeline-position">
+                                    <p>Fullstack Developer (Remote)</p>
+                                </div><!-- /.timeline-position -->
+                                <div class="timeline-date">
+                                    <p>Sept 2022 - Present</p>
+                                </div><!-- /.timeline-date -->
+                            </div><!-- /.timeline-heading -->
+                            <div class="timeline-body">
+                                <div class="timeline-body-thumb">
+                                    <!-- <img src="assets/img/timeline-img.jpg" class="img-res" alt=""> -->
+                                </div><!-- /.timeline-body-thumb -->
+                                <p style="text-transform:uppercase"><b>Yonevas</b></p><br>
+                                <p>At Yonevas, I am honored to serve as a full-stack developer. My ongoing journey with
+                                    this innovative company continues
+                                    to be a dynamic experience, allowing me to contribute to various projects and
+                                    develop both front-end and back-end
+                                    solutions. It is an ongoing opportunity that enables me to refine my skills and
+                                    expand my expertise in the world of web
+                                    development.</p>
+                            </div><!-- /.timeline-body -->
+                        </div><!-- /.timeline-panel -->
+                    </li><!-- /.timeline-inverted -->
+
+                    <!-- Timeline job & description  -->
+                    <li>
+                        <div class="rectangle timeline-rectangle"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <div class="timeline-date">
+                                    <p>May 2022 - Sept 2022</p>
+                                </div><!-- /.timeline-date -->
+                                <div class="timeline-position">
+                                    <p>Fullstack Developer (Freelancing)</p>
+                                </div><!-- /.timeline-position -->
+                            </div><!-- /.timeline-heading -->
+                            <div class="timeline-body">
+                                <div class="timeline-body-thumb">
+                                    <!-- <img src="assets/img/timeline-img.jpg" class="img-res" alt=""> -->
+                                </div><!-- /.timeline-body-thumb -->
+                                <p style="text-transform:uppercase"><b>Zeroes and Ones Hi-Tech</b></p><br>
+                                <p>At Zeroes and Ones, I had the privilege of serving as a full-stack developer. My time
+                                    with this
+                                    forward-thinking company was a
+                                    transformative chapter, where I contributed to a range of projects and was
+                                    responsible for developing comprehensive
+                                    front-end and back-end solutions. This experience enriched my skill set and deepened
+                                    my knowledge in the field of web
+                                    development, paving the way for my current role at Yonevas.</p>
+                            </div><!-- /.timeline-body -->
+                        </div><!-- /.timeline-panel -->
+                    </li>
+
+                    <!-- Timeline badge -->
+                    <li class="timeline-start">
+                        <!-- <div class="rectangle"><span>2017</span></div> -->
+                    </li><!-- /.timeline-start -->
+
+                    <!-- Timeline job & description, inverted  -->
+                    <li class="timeline-inverted">
+                        <div class="rectangle timeline-rectangle"></div>
+                        <div class="timeline-panel">
+                            <!-- <h1>EDUCATION</h1> -->
+                            <div class="timeline-heading">
+
+                                <div class="timeline-position">
+                                    <p>Web Developer (Wordpress)</p>
+                                </div><!-- /.timeline-position -->
+                                <div class="timeline-date">
+                                    <p>Oct 2021 - Dec 2021</p>
+                                </div><!-- /.timeline-date -->
+                            </div><!-- /.timeline-heading -->
+                            <div class="timeline-body">
+                                <div class="timeline-body-thumb">
+                                    <!-- <img src="assets/img/timeline-img.jpg" class="img-res" alt=""> -->
+                                </div><!-- /.timeline-body-thumb -->
+                                <p style="text-transform:uppercase"><b>Kwikseller</b></p><br>
+                                <p>At Kwikseller, I embraced the role of a Frontend and Wordpress developer,
+                                    contributing my expertise to a diverse array of projects. My
+                                    time with this dynamic company was marked by creative problem-solving and the
+                                    development of comprehensive wordpress websites. It was a pivotal phase that not
+                                    only honed my web development skills but also cultivated my ability
+                                    to adapt to new challenges and deliver innovative solutions.</p>
+                            </div><!-- /.timeline-body -->
+                        </div><!-- /.timeline-panel -->
+                    </li><!-- /.timeline-inverted -->
+
+
+                    <!-- Timeline job & description  -->
+                    <li>
+                        <div class="rectangle timeline-rectangle"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <div class="timeline-date">
+                                    <p>Dec 2020 - Mar 2021</p>
+                                </div><!-- /.timeline-date -->
+                                <div class="timeline-position">
+                                    <p>Fullstack Developer (Internship)</p>
+                                </div><!-- /.timeline-position -->
+                            </div><!-- /.timeline-heading -->
+                            <div class="timeline-body">
+                                <div class="timeline-body-thumb">
+                                    <!-- <img src="assets/img/timeline-img.jpg" class="img-res" alt=""> -->
+                                </div><!-- /.timeline-body-thumb -->
+                                <p style="text-transform:uppercase"><b>Piggisty</b></p><br>
+                                <p>At Piggisty, I embarked on a unique journey as both a developer and an Intern, where
+                                    I had the chance to immerse myself in
+                                    the world of web development. During my time with this forward-thinking company, I
+                                    actively contributed to projects
+                                    while honing my skills, and my dual role allowed me to learn and apply the latest
+                                    industry practices. It was an
+                                    enriching experience that laid the foundation for my subsequent roles, providing a
+                                    valuable blend of hands-on experience
+                                    and growth.</p>
+                            </div><!-- /.timeline-body -->
+                        </div><!-- /.timeline-panel -->
+                    </li>
+
+                    <!-- Timeline job & description, inverted  -->
+                    <li class="timeline-inverted">
+                        <div class="rectangle timeline-rectangle"></div>
+                        <div class="timeline-panel">
+                            <!-- <h1>EDUCATION</h1> -->
+                            <div class="timeline-heading">
+
+                                <div class="timeline-position">
+                                    <p>Web Developer (Internship)</p>
+                                </div><!-- /.timeline-position -->
+                                <div class="timeline-date">
+                                    <p>Mar 2020 - Sept 2020</p>
+                                </div><!-- /.timeline-date -->
+                            </div><!-- /.timeline-heading -->
+                            <div class="timeline-body">
+                                <div class="timeline-body-thumb">
+                                    <!-- <img src="assets/img/timeline-img.jpg" class="img-res" alt=""> -->
+                                </div><!-- /.timeline-body-thumb -->
+                                <p style="text-transform:uppercase"><b>McLords Mobile Solutions</b></p><br>
+                                <p>At McLords, my Web development journey began as an intern, immersing me in the world
+                                    of web development. During my time with this
+                                    progressive company, I had the privilege of learning from industry experts, gaining
+                                    hands-on experience, and applying my
+                                    knowledge in real-world scenarios. This internship was the pivotal starting point of
+                                    my passion for web development,
+                                    setting me on the path to becoming a full-stack developer.</p>
+                            </div><!-- /.timeline-body -->
+                        </div><!-- /.timeline-panel -->
+                    </li><!-- /.timeline-inverted -->
+
+
+                    <!-- Timeline Badge  -->
+                    <li class="timeline-end">
+                        <div class="rectangle"><span>History</span></div>
+                    </li><!-- /.timeline-end -->
+                </ul><!-- /.timeline -->
+
+
+            </div><br><br>
+
+            <div class="container" style="margin-bottom:10px">
+                <div class="text-center section-diff-title">
+                    <!-- <h2 style="text-transform:uppercase">A Look Back At my History</h2> -->
+                    <p style="border:1px dotted rgb(80, 46, 105); padding:10px; font-size:20px">Education</p>
+                </div>
+                <!-- Timeline -->
+                <ul class="timeline">
+                    <!-- Timeline badge -->
+                    <li class="timeline-start">
+                        <div class="rectangle"><span>History</span></div>
+                    </li><!-- /.timeline-start -->
+                    <li class="timeline-inverted">
+                        <div class="rectangle timeline-rectangle"></div>
+                        <div class="timeline-panel">
+                            <!-- <h1>EDUCATION</h1> -->
+                            <div class="timeline-heading">
+
+                                <div class="timeline-position">
+                                    <p>Bachelors Degree</p>
+                                </div><!-- /.timeline-position -->
+                                <div class="timeline-date">
+                                    <p>Sept 2017 - May 2022</p>
+                                </div><!-- /.timeline-date -->
+                            </div><!-- /.timeline-heading -->
+                            <div class="timeline-body">
+                                <div class="timeline-body-thumb">
+                                    <!-- <img src="assets/img/timeline-img.jpg" class="img-res" alt=""> -->
+                                </div><!-- /.timeline-body-thumb -->
+                                <p style="text-transform:uppercase"><b>University of Ilorin</b></p><br>
+                                <p>I earned my Bachelor of Science in Computer Science from Unilorin. This academic
+                                    journey has provided me
+                                    with a solid foundation and the knowledge to excel in the dynamic world of
+                                    technology. It's where my passion for web
+                                    development took root, and I've been dedicated to honing my skills ever since.</p>
+                            </div><!-- /.timeline-body -->
+                        </div><!-- /.timeline-panel -->
+                    </li><!-- /.timeline-inverted -->
+
+
+
+                    <!-- Timeline Badge  -->
+                    <li class="timeline-end">
+                        <div class="rectangle"><span>History</span></div>
+                    </li><!-- /.timeline-end -->
+                </ul><!-- /.timeline -->
+
+
+            </div>
+        </section><!-- /.section-history -->
+        <!-- End History section -->
+
+        <!-- Portfolio/Works section -->
+        <section class="site-section section-works" id="works">
+            <div class="container">
+                <h2>RECENT WORKS</h2>
+                <p style="text-transform: uppercase" class="section-subtitle"><span>Recent Projects: A Creative
+                        Showcase</span></p>
+
+                <div class="portfolio">
+                    <ul class="portfolio-sorting list-inline">
+                        <li><a href="#" class=" active" data-group="all">all</a></li>
+                        <li><a href="#" class="" data-group="webapps">Web Applications</a></li>
+                        <li><a href="#" class="" data-group="websites">Mutlipage Websites</a></li>
+                        <li><a href="#" class="" data-group="others">Others</a></li>
+                    </ul><!-- /.portfolio-sorting  -->
+
+                    <div id="grid">
+
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["others"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/img/myprojectsscreenshots/online/one.png" style="object-fit:cover"
+                                        alt="" class="img-res">
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Personal Portfolio</h3>
+                                    <p><a href="javascript:;" target="_blank"
+                                            style="color:red; font-size:18px; text-decoration: underline">Visit Site</a>
+                                    </p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["websites"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/img/myprojectsscreenshots/online/two.png" alt=""
+                                        class="img-res img-responsive" style="max-width: 100%;" />
+                                </div><!-- /.portfolio-item-thumb -->
+                                <div class="portfolio-info">
+                                    <h3>Barbershop</h3>
+                                    <p><a href="https://blancosbarbershop.netlify.app/" target="_blank"
+                                            style="color: red; font-size: 18px; text-decoration: underline">Visit
+                                            Site</a></p>
+                                </div><!-- /.portfolio-info -->
+                            </div>
+                        </div><!-- /.col-md-3 -->
+
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["others"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/img/myprojectsscreenshots/online/three.png" alt=""
+                                        class="img-res img-responsive" style="max-width: 100%; width: 100%" />
+                                </div><!-- /.portfolio-item-thumb -->
+                                <div class="portfolio-info">
+                                    <h3>A School landing page</h3>
+                                    <p><a href="https://crestcollege.netlify.app/" target="_blank"
+                                            style="color: red; font-size: 18px; text-decoration: underline">Visit
+                                            Site</a></p>
+                                </div><!-- /.portfolio-info -->
+                            </div>
+                        </div>
+                        <!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["websites"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/img/myprojectsscreenshots/online/four.png" alt=""
+                                        class="img-res img-responsive" style="max-width: 100%; width: 100%" />
+                                </div><!-- /.portfolio-item-thumb -->
+                                <div class="portfolio-info">
+                                    <h3>COVID-19 Awareness</h3>
+                                    <p><a href="https://coroawareness.netlify.app/" target="_blank"
+                                            style="color: red; font-size: 18px; text-decoration: underline">Visit
+                                            Site</a></p>
+                                </div><!-- /.portfolio-info -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webapps"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/img/myprojectsscreenshots/online/five.png" alt=""
+                                        class="img-res img-responsive" style="max-width: 100%; width: 100%" />
+                                </div><!-- /.portfolio-item-thumb -->
+                                <div class="portfolio-info">
+                                    <h3>Dashex Delivery</h3>
+                                    <p><a href="https://dashex.com.ng" target="_blank"
+                                            style="color: red; font-size: 18px; text-decoration: underline">Visit
+                                            Site</a></p>
+                                </div><!-- /.portfolio-info -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webapps"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/img/myprojectsscreenshots/online/six.png" alt=""
+                                        class="img-res img-responsive" style="max-width: 100%; width: 100%" />
+                                </div><!-- /.portfolio-item-thumb -->
+                                <div class="portfolio-info">
+                                    <h3>A School web app/Portal</h3>
+                                    <p><a href="https://yonevas.institute" target="_blank"
+                                            style="color: red; font-size: 18px; text-decoration: underline">Visit
+                                            Site</a></p>
+                                </div><!-- /.portfolio-info -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webapps"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/img/myprojectsscreenshots/online/seven.png" alt=""
+                                        class="img-res img-responsive" style="max-width: 100%; width: 100%" />
+                                </div><!-- /.portfolio-item-thumb -->
+                                <div class="portfolio-info">
+                                    <h3>A Library web app</h3>
+                                    <p><a href="https://you.i.ng" target="_blank"
+                                            style="color: red; font-size: 18px; text-decoration: underline">Visit
+                                            Site</a></p>
+                                </div><!-- /.portfolio-info -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["websites"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/img/myprojectsscreenshots/offline/oneoff.png" alt=""
+                                        class="img-res img-responsive" style="max-width: 100%; width: 100%" />
+                                </div><!-- /.portfolio-item-thumb -->
+                                <div class="portfolio-info">
+                                    <h3>eCommerce(Clothing)</h3>
+                                </div><!-- /.portfolio-info -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["others"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item">
+                                    <div class="portfolio-item-thumb">
+                                        <img src="assets/img/myprojectsscreenshots/offline/twooff.png" alt=""
+                                            class="img-res img-responsive" style="max-width: 100%; width: 100%" />
+                                    </div><!-- /.portfolio-item-thumb -->
+                                    <div class="portfolio-info">
+                                        <h3>eCommerce(watches)</h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webapps"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item">
+                                    <div class="portfolio-item-thumb">
+                                        <img src="assets/img/myprojectsscreenshots/offline/fouroff.png" alt=""
+                                            class="img-res img-responsive" style="max-width: 100%; width: 100%" />
+                                    </div><!-- /.portfolio-item-thumb -->
+                                    <div class="portfolio-info">
+                                        <h3>Hospital Management System</h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div>
+                            </div>
+                        </div><!-- /.col-md-3 -->
+
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webapps"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item">
+                                    <div class="portfolio-item-thumb">
+                                        <img src="assets/img/myprojectsscreenshots/offline/nine.png" alt=""
+                                            class="img-res img-responsive" style="max-width: 100%; width: 100%" />
+                                    </div><!-- /.portfolio-item-thumb -->
+                                    <div class="portfolio-info">
+                                        <h3>Library Management System</h3>
+                                    </div><!-- /.portfolio-info -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["websites"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/img/myprojectsscreenshots/offline/eight.png" alt=""
+                                        class="img-res img-responsive" style="max-width: 100%; width: 100%" />
+                                </div><!-- /.portfolio-item-thumb -->
+                                <div class="portfolio-info">
+                                    <h3>Restaurant Management System</h3>
+                                </div><!-- /.portfolio-info -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+                        <!-- Portfolio item -->
+
+
+                    </div><!-- /#grid -->
+                </div>
+            </div>
+        </section><!-- /.section-works -->
+        <!-- End Works section -->
+
+        <!-- Me section -->
+        <section class="section-background section-me background-overlay text-center">
+            <div class="container page-scroll">
+                <h2>Are You Impressed By My Work?</h2>
+                <p>Discover the Artistry Behind My Works</p>
+                <a href="#contact" class="btn touch">GET IN TOUCH</a>
+            </div>
+        </section><!-- /.section-me -->
+        <!-- End Me section -->
+
+
+        <!-- Contacts section -->
+        <section class="site-section section-contact" id="contact">
+            <div class="container">
+                <h2>CONTACT ME</h2>
+                <p class="section-subtitle"><span>Here i am</span></p>
+                <div class="row">
+                    <form>
+                        <div class="col-md-4">
+                            <input class="form-control" name="username" id="username" type="text" placeholder="Name"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" name="email" id="email" type="email" placeholder="Email"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" name="subject" id="subject" type="text" placeholder="Subject"
+                                required>
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" name="message" id="message" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <button onClick="sendMail()" class="btn btn-inverted">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section><!-- /.section-contact-->
+        <!-- End Contacts section -->
+
+        <!-- Social Networks section -->
+        <section class="section-networks blue-bg">
+            <div class="container">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=2348135756270" class="rectangle abcde">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+                <a target="_blank" href="https://twitter.com/SayidnaTheGreat" class="rectangle abcde">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/mohammed-ali-b4b613238" class="rectangle abcde">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a target="_blank" href="mailto:alimoh22062000@gmail.com" class="rectangle abcde">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <a target="_blank" href="https://github.com/alimohammed99" class="rectangle abcde">
+                    <i class="fa fa-github"></i>
+                </a>
+            </div>
+        </section><!-- /.section-networks-->
+        <!-- End Social Networks section -->
+
+    </main><!-- /#main -->
+    <!-- End Main content -->
+
+    <!-- Footer -->
+    <footer id="colophon" class="site-footer">
+
+        <div class="container-fluid">
+
+            <ul class="list-unstyled list-inline">
+                <li class="page-scroll"><a href="#top">Home</a></li>
+                <li class="page-scroll"><a href="#intro">Intro</a></li>
+                <li class="page-scroll"><a href="#about">About</a></li>
+                <li class="page-scroll"><a href="#services">Services</a></li>
+                <li class="page-scroll"><a href="#history">History</a></li>
+                <li class="page-scroll"><a href="#works">Works</a></li>
+                <li class="page-scroll"><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="page-scroll">
+                <a href="#top" class="rectangle">
+                    <i class="fa fa-angle-double-up"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container text-center">
+            <p class="copyright">MOHAMMED ALI👨‍💻</p>
+        </div>
+
+    </footer><!-- /#footer -->
+    <!-- End Footer -->
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery core js | Do not Delete -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap core js | Do not Delete -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap progressbar JS -->
+    <script src="assets/js/bootstrap-progressbar.min.js"></script>
+
+    <!-- Count To JS -->
+    <script src="assets/js/jquery.countTo.min.js"></script>
+
+    <!-- Easing JS -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!-- Shuffle JS -->
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- Touchswipe JS -->
+    <script src="assets/js/touchswipe.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
