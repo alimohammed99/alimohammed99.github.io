@@ -176,6 +176,30 @@
                 /* Return to the color red at the end of the animation */
             }
         }
+
+        
+        /* STYLING FOR CV-DOWNLOAD */
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(30deg);
+            }
+        }
+
+        .cv-download-link {
+            text-align: center;
+            display: inline-block;
+            padding: 10px;
+            border: none;
+            background-color: lightblue;
+            color: red;
+            text-decoration: none;
+            animation: rotate 2s linear infinite;
+            /* Adjust the duration as needed */
+        }
     </style>
 
 </head>
@@ -190,12 +214,15 @@
         <div class="hero-content">
             <h1 style="margin-top: 7px !important" class="fade-in slidee">I am Mohammed Ali</h1><br><br><br>
 
-            <p style="text-transform: uppercase" class="fade-in hero-job" id="changingHeading"><span>I'm a web wizard, conjuring online magic.</span></p><br>
+            <p style="text-transform: uppercase" class="fade-in hero-job" id="changingHeading"><span>I'm a web wizard,
+                    conjuring online magic.</span></p><br>
 
-            <p class="hero-job-desc fade-in" style="text-transform: uppercase; text-align:center;">Weaving Code Spells.....💻</p><br><br>
+            <p class="hero-job-desc fade-in" style="text-transform: uppercase; text-align:center;">Weaving Code
+                Spells.....💻</p><br><br>
 
             <p><a target="_blank" title="Click to download my CV" style="text-align:center;"
-                    href="https://drive.google.com/file/d/1XtxvfWJOKyVtBRenKRT6hQWA7_MIhtix/view?usp=sharing">Download CV</a></p>
+                    href="https://drive.google.com/file/d/1XtxvfWJOKyVtBRenKRT6hQWA7_MIhtix/view?usp=sharing"
+                    class="cv-download-link">Download CV</a></p>
 
             <section class="section-networks">
                 <div class="container">
@@ -362,11 +389,13 @@
                 <p class="section-subtitle"><span>My mission is to breathe life into products and services.</span></p>
 
                 <p class="section-subtitle" style="line-height: 1.7;">
-                    Greetings, I'm <b>Mohammed Ali</b>, a graduate of the <b>University of Ilorin</b> with a <b>B.Sc.</b> in
+                    Greetings, I'm <b>Mohammed Ali</b>, a graduate of the <b>University of Ilorin</b> with a
+                    <b>B.Sc.</b> in
                     <b>Computer Science</b>. My
                     captivating journey into the world of web development took root during a challenging time – <b>the
-                    infamous COVID-19
-                    pandemic</b> that swept through my country. Amidst the backdrop of this deadly disease, I discovered my
+                        infamous COVID-19
+                        pandemic</b> that swept through my country. Amidst the backdrop of this deadly disease, I
+                    discovered my
                     passion and embarked
                     on this creative and ever-evolving path.<br><br>
 
